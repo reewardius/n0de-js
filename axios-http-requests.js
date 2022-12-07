@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-axios.get('https://jsonplaceholder.typicode.com/users')
+axios.get('https://{{URL}}/users')
   .then(res => {
     const headerDate = res.headers && res.headers.date ? res.headers.date : 'no response date';
     console.log('Status Code:', res.status);
